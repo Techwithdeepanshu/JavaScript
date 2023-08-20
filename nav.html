@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0; box-sizing: border-box;}
+        .body{
+            width: 100%;
+            height: 600px;
+        }
+
+         .nav{
+            width: 100%;
+            background-color: aqua;
+            padding: 2%;
+            margin-bottom: 1%;
+         }
+
+        .nav ul li{
+            list-style: none;
+            display: inline;
+            padding: 1%;
+            background-color: rgba(13, 14, 13, 0.47);
+            margin-left:3% ;
+            border: 2px solid red;
+            border-radius: 50px;
+        }
+        .nav ul li button{
+           /* text-shadow: 2px 2px 2px red;
+            color: black;
+            border: 2px solid rgb(215, 31, 215);
+            background-color:chartreuse;
+            padding: 4px; */
+            cursor: pointer;
+        }
+
+        .post{
+            width: 100%;
+            height: 400px;
+            background-color: tomato;
+        }
+
+        h1{
+            font-size: 4rem;
+            color: rgb(42, 83, 207);
+            text-transform: capitalize;
+            font-style: italic;
+            line-height: 400px;
+            text-align: center;
+        }
+    </style>
+   
+
+</head>
+<body>
+    <div class="body">
+        <div class="nav">
+            <ul>
+                <li><button onclick="document.getElementById('text').innerHTML='Bootstrap'">Design-1</button></li>
+                <li><button onclick="document.getElementById('text').innerHTML='Adobe Photoshop'">Design-2</button></li>
+                <li><button onclick="document.getElementById('text').innerHTML='Figma'">Design-3</button></li>
+                <li><button onclick="document.getElementById('text').innerHTML='VS Code'">Design-4</button></li>
+                <li><button onclick="document.getElementById('text').innerHTML='Adobe XD'">Design-5</button></li>
+                <li><button onclick="document.getElementById('text').innerHTML='Web Designer'">Design-6</button></li>
+                <li><button onclick="document.getElementById('text').innerHTML='Canva'">Design-7</button></li>
+                <li><button onclick="document.getElementById('text').innerHTML='Affinity Designer'">Design-8</button></li>
+            </ul>
+           </div>
+
+           <div class="post">
+            <h1 id="text">This is the design.</h1>
+           </div>
+    </div>
+   
+
+    
+</body>
+</html>
